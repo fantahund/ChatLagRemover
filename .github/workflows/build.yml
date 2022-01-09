@@ -13,7 +13,7 @@ jobs:
         with:
           java-version: 1.17
       - name: Build with Gradle
-        run: ./gradlew
+        run: ./gradlew build
       - uses: actions/upload-artifact@v2
         with:
           name: ChatLagRemover
@@ -25,4 +25,4 @@ jobs:
           prerelease: false
           title: "Release"
           files: |
-            build/libs/*.jar
+            build/libs/chatlagremover-*([0-9\.\-]).jar
