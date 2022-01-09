@@ -1,6 +1,6 @@
 name: ChatLagRemover
 
-on: [push]
+on: [push, workflow_dispatch]
 
 jobs:
   build:
@@ -25,4 +25,4 @@ jobs:
           prerelease: false
           title: "Release"
           files: |
-            build/libs/chatlagremover-*([0-9\.\-]).jar
+            build/libs/*.jar
