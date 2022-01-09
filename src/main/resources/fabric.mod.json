@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "chatlagremover",
+  "version": "${version}",
+  "name": "ChatLagRemover",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/chatlagremover/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "de.fanta.chatlagremover.ChatlagremoverClient"
+    ]
+  },
+  "mixins": [
+    "chatlagremover.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.12",
+    "minecraft": "1.18.1"
+  }
+}
